@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { syllabi } from "@/lib/syllabi";
 
@@ -19,7 +20,14 @@ const toneStyles = {
 
 export default function SyllabiPage() {
   return (
-    <div className="space-y-10">
+    <div className="">
+      <Image
+        src="/images/anime1.png"
+        alt=""
+        width={625}
+        height={1000}
+        className="-z-10 absolute bottom-0 left-0"
+      />
       <div className="space-y-3">
         <Link
           href="/"
@@ -27,10 +35,10 @@ export default function SyllabiPage() {
         >
           Back to home
         </Link>
-        <h1 className="text-3xl font-extrabold text-ink md:text-4xl">
+        <h1 className="text-3xl font-extrabold text-ink md:text-4xl mt-2">
           Choose your syllabus
         </h1>
-        <p className="max-w-2xl text-base text-ink-muted">
+        <p className="max-w-2xl text-base text-ink-muted mb-5">
           Start with the curriculum that fits the learner best. Everything is
           clean, organized, and easy to follow.
         </p>
@@ -61,5 +69,6 @@ export default function SyllabiPage() {
         ))}
       </div>
     </div>
+
   );
 }
