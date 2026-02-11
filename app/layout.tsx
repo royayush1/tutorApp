@@ -30,7 +30,7 @@ export default function RootLayout({
           <div className="relative z-10">
             <SiteHeader />
             <PageTransition>
-              <main className="mx-auto max-w-6xl px-6 pb-16 pt-10">
+              <main className="mx-auto max-w-6xl px-6 pb-16 pt-10 min-h-screen">
                 {children}
               </main>
             </PageTransition>
