@@ -56,20 +56,6 @@ export default function Home() {
             clean guidance. Bright colors, smooth transitions, and calm structure
             keep motivation high and attention steady.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="/syllabi"
-              className="rounded-full bg-sky px-6 py-3 text-sm font-semibold text-white shadow-card transition hover:-translate-y-0.5 hover:bg-sky-deep"
-            >
-              Choose a syllabus
-            </Link>
-            <Link
-              href="/syllabi/gcse/subjects/psychology"
-              className="rounded-full border border-line bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:border-sky/50"
-            >
-              Preview chapters
-            </Link>
-          </div>
         </div>
         <div className="relative">
           <div className="rounded-3xl border border-line bg-white/90 p-8 shadow-card">

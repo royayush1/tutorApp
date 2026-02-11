@@ -21,7 +21,7 @@ export default function SubjectsPage({
           href="/syllabi"
           className="text-sm font-semibold text-ink-muted transition hover:text-ink"
         >
-          <- Back to syllabi
+          Back to syllabi
         </Link>
         <h1 className="text-3xl font-extrabold text-ink md:text-4xl">
           {syllabus.label} subjects
@@ -48,7 +48,7 @@ export default function SubjectsPage({
               {subject.description}
             </p>
             <div className="mt-6 text-sm font-semibold text-ink">
-              View chapters ->
+              View chapters
             </div>
           </Link>
         ))}
