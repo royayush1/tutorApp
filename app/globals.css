@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1b2a4a;
+  --color-ink-muted: #5b6b8d;
+  --color-sky: #4f8cff;
+  --color-sky-deep: #2d6bff;
+  --color-berry: #ff7db9;
+  --color-sun: #ffd166;
+  --color-mint: #35d6b1;
+  --color-lavender: #b99cff;
+  --color-cloud: #f6f9ff;
+  --color-line: #e3ecf7;
+  --color-sage: #152944;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cloud text-ink antialiased;
+  }
+
+  ::selection {
+    background: rgba(79, 140, 255, 0.25);
+  }
+}
+
+@layer utilities {
+  .shadow-card {
+    box-shadow: 0 14px 35px rgba(27, 42, 74, 0.12);
+  }
+
+  .bg-hero-glow {
+    background-image: radial-gradient(
+      circle at top,
+      rgba(79, 140, 255, 0.2),
+      transparent 55%
+    );
+  }
+}
