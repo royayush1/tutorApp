@@ -20,7 +20,7 @@ const toneStyles = {
 
 export default function SyllabiPage() {
   return (
-    <div className="">
+    <div>
       <Image
         src="/images/anime1.png"
         alt=""
