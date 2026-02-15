@@ -42,7 +42,7 @@ export default function ChapterIndexPage({
           href={`/syllabi/${syllabus.key}`}
           className="text-sm font-semibold text-ink-muted transition hover:text-ink"
         >
-          <- Back to subjects
+          Back to subjects
         </Link>
         <div className="flex flex-wrap items-center gap-3">
           <span
