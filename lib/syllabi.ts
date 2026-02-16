@@ -9,6 +9,7 @@ export type Subject = {
   key: "psychology";
   label: string;
   description: string;
+  tone: Tone;
   sections: ChapterSection[];
 };
 
@@ -33,6 +34,7 @@ export const subjects: Subject[] = [
       key: "psychology",
       label: "Psychology",
       description: "How minds grow, learn, and connect.",
+      tone: "berry",
       sections: [
         {
           title: "Foundations of Psychology",
