@@ -6,7 +6,7 @@ export type ChapterSection = {
 };
 
 export type Subject = {
-  key: "psychology";
+  key: string;
   label: string;
   description: string;
   tone: Tone;
@@ -31,18 +31,22 @@ export type ExamBoard = {
 
 export const subjects: Subject[] = [
     {
-      key: "psychology",
+      key: "edePsych",
       label: "Psychology",
       description: "How minds grow, learn, and connect.",
       tone: "berry",
       sections: [
         {
-          title: "Foundations of Psychology",
+          title: "Development - How did you develop?",
           items: [
-            "Introduction to psychology and key ideas",
-            "The brain and nervous system",
-            "Development through childhood and adolescence",
-            "Theories of learning and behaviour"
+            "Early brain development",
+            "Piaget’s stages of development and their role in education",
+            "Piaget’s theory of cognitive development and the development of intelligence",
+            "Dweck’s mindset theory and the effects of learning on development",
+            "Willingham’s learning theory and the effects of learning on development",
+            "Development studies by Piaget and Inhelder (1956) and Gunderson et al. (2013)",
+            "Issues and debates around the development of morality."
+
           ]
         },
         {
@@ -82,7 +86,7 @@ export const examBoards: ExamBoard[] = [
         label: "Edexcel",
         description: "Edexcel is among the popular and flexible UK-based boards. It is the largest examination board in the UK, owned by Pearson Education. The Pearson Edexcel of Examinations is taking the International GCSEs (IGCSEs), and the A Levels, which is delivered at the worldwide level and it is considered as the major academic qualifications",
         tone: "sky",
-        subjects: subjects.filter((b) => ["psychology"].includes(b.key))
+        subjects: subjects.filter((b) => ["edePsych"].includes(b.key))
 
   },
   {
