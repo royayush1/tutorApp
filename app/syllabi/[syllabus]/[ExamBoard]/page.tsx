@@ -60,9 +60,10 @@ export default async function SubjectsPage({params}: {params: Promise<{ syllabus
 
       <div className="grid gap-6 md:grid-cols-2">
         {currentBoard.subjects.map((subject) => (
+          
           <Link
             key={subject.key}
-            href={`/syllabi/${syllabus.key}/${currentBoard.key}/subjects/${subject.key}`}
+            href={`/syllabi/${syllabus.key}/${currentBoard.key}/${subject.key}`}
             className={`group flex h-full flex-col rounded-3xl border bg-white/90 p-6 shadow-card transition hover:-translate-y-1 ${toneStyles[subject.tone].border}`}
           >
             <div className={`text-xs w-fit font-semibold uppercase tracking-wide text-ink-muted ${toneStyles[subject.tone].badge}`}>
